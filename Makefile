@@ -13,4 +13,8 @@
 # limitations under the License.
 
 # Makefile
-include Scripts/Makefile
+-include Scripts/Makefile
+
+Scripts/Makefile:
+	git submodule init
+	git submodule update
